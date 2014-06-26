@@ -1,0 +1,6 @@
+Django
+MySQL-python
+django_extensions
+bitcoin-python
+pycrypto
+django-dajax

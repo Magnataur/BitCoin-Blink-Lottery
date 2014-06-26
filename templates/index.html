@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Main page</h1>
+    <p>Player address = {{ player.address }}</p>
+    <p>Blink address = {{ player.wallet }}</p>
+    <p>Player cash = {{ player.cash }}</p>
+
+    <a href="/logout/">Logout here ...</a>
+    <hr />
+    <h2>Active blinks</h2>
+    {% for b in blinks %}
+        <h2>Join to blink <a href="/blink/{{ b.pk }}/">Blink info</a></h2>
+    <ul>
+        {% for v in b.vacancies %}
+        <li><a href='/join/{{ b.pk }}/{{ v }}/'>{{ v }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+</body>
+</html>

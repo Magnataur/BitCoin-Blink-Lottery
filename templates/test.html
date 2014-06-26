@@ -1,0 +1,17 @@
+{% load dajaxice_templatetags %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Ajax test</title>
+    {% dajaxice_js_import %}
+    <script>
+    function my_js_callback(data){
+        alert(data.message);
+    }
+    </script>
+</head>
+<body>
+    <h1>Django Ajax test</h1>
+    <input type="button" onclick="Dajaxice.blink_web.sayhello(my_js_callback);" value="Get message from server!">
+</body>
+</html>

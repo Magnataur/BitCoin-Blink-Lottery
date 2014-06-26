@@ -1,0 +1,9 @@
+.idea
+*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+tags
+__pycache__
+*.pyc
